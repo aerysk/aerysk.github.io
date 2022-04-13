@@ -28,11 +28,24 @@ body, html {
     background-color: #addbb4;
     border-radius: 8px;
     border: none;
+    padding: 10px;
 }
 
 .menu-item:hover {
     background-color: #664949;
     color: whitesmoke;
+    animation: menu-gradient 1s ease;
+}
+
+@keyframes menu-gradient {
+    from { 
+        background-color: #addbb4;
+        color: #664949;
+    }
+    to {
+        background-color: #664949;
+        color: whitesmoke;
+    }
 }
 
 .header-text {
@@ -47,14 +60,14 @@ body, html {
     white-space: nowrap;
     border-right: .15em solid white; /* The typwriter cursor */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 1.25s steps(40, end),
       blink-caret .75s step-end infinite;
 }
   
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 100%; }
+    to { width: 375px; }
 }
 
 /* The typewriter cursor effect */
