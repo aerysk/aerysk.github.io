@@ -12,6 +12,63 @@ body, html {
     background-color: #addbb4;
 }
 
+.square-L1 {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background: #664949;
+    animation: dissipate-L1 4s infinite;
+    opacity: 0.5;
+}
+
+.square-L2 {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background: #664949;
+    animation: dissipate-L2 4s infinite;
+    opacity: 0.3;
+}
+
+.square-L3 {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background: #664949;
+    animation: dissipate-L3 4s infinite;
+    opacity: 0.1;
+}
+
+.square-R {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background: #664949;
+    animation: dissipate-R 4s infinite;
+}
+
+@keyframes dissipate-L1 {
+    from { opacity: 0.7; }
+    to { opacity: 0.3; }
+}
+
+@keyframes dissipate-L2 {
+    from { opacity: 0.5; }
+    to { opacity: 0.2; }
+}
+
+@keyframes dissipate-L3 {
+    from { opacity: 0.3; }
+    to { opacity: 0.1; }
+}
+
+@keyframes dissipate-R {
+    from { opacity: 0.9; }
+    to { opacity: 0.7; }
+    to { opacity: 0.5; }
+    to { opacity: 0.3; }
+}
+
 .header-text {
     position: relative;
     font-family: 'Allerta', sans-serif;
@@ -124,11 +181,11 @@ body, html {
 
 @keyframes scaleIn {
     from {
-      transform: scale(0.8, 0.8);
-      opacity: 0.8;
+        transform: scale(0.8, 0.8);
+        opacity: 0.8;
     }
     to {
-      transform: scale(1.5, 1.5);
-      opacity: 0;
+        transform: scale(1.5, 1.5);
+        opacity: 0;
     }
-  }
+}
