@@ -69,6 +69,42 @@ body, html {
     to { opacity: 0.3; }
 }
 
+.menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 10px;
+}
+
+.menu-item {
+    font-family: 'Allerta', sans-serif;
+    font-size: 38px;
+    color: #664949;
+    margin-right: 0px;
+    display: inline-block;
+    background-color: #addbb4;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+.menu-item:hover {
+    background-color: #664949;
+    color: whitesmoke;
+    animation: menu-gradient 1s ease;
+}
+
+@keyframes menu-gradient {
+    from { 
+        background-color: #addbb4;
+        color: #664949;
+    }
+    to {
+        background-color: #664949;
+        color: whitesmoke;
+    }
+}
+
 .header-text {
     position: relative;
     font-family: 'Allerta', sans-serif;
@@ -81,14 +117,14 @@ body, html {
     white-space: nowrap;
     border-right: .15em solid white; /* The typwriter cursor */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 1.25s steps(40, end),
       blink-caret .75s step-end infinite;
 }
   
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 100%; }
+    to { width: 375px; }
 }
 
 /* The typewriter cursor effect */
@@ -108,17 +144,17 @@ body, html {
     font-family: 'Allerta', sans-serif;
     font-size: 48px;
     color: #664949;
-    margin-left: 200px;
+    margin-left: 143px;
     margin-top: 80px;
     display: inline-block;
 }
 
 .bio {
     position: absolute;
-    width: 514px;
+    width: 40%;
     height: 93px;
-    left: 547px;
-    top: 189px;
+    left: 500px;
+    top: 150px;
     font-family: 'Allerta', sans-serif;
     font-size: 24px;
     color: #664949;
@@ -161,7 +197,7 @@ body, html {
     position: absolute;
     width: 216px;
     height: 216px;
-    left: 263px;
+    left: 223px;
     top: 160px;
     object-fit: cover;
     border-radius: 9999px;
@@ -173,7 +209,7 @@ body, html {
     background-color: #addbb4;
     width: 250px;
     height: 250px;
-    left: 246px;
+    left: 206px;
     top: 143px;
     opacity: 0;
     animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
@@ -188,4 +224,12 @@ body, html {
         transform: scale(1.5, 1.5);
         opacity: 0;
     }
+}
+
+.linkedin {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    bottom: 15px;
 }
