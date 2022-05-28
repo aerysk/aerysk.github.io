@@ -2,7 +2,6 @@
 
 body, html {
     margin: 0;
-    padding: 0;
     font-family: 'Allerta', sans-serif;
     background-color: #addbb4;
 }
@@ -14,9 +13,6 @@ body, html {
     min-height: 211px;
     min-width: 1058px;
     background: #664949;
-    /* background: linear-gradient(-45deg, #addbb4, #8287ca);
-    background-size: 400% 200%;
-    animation: gradient 15s ease infinite; */
 }
 
 @keyframes gradient {
@@ -157,7 +153,7 @@ body, html {
 }
 
 .linkedin {
-    position: absolute;
+    position: relative;
     width: 50px;
     height: 50px;
     left: 50%;
@@ -255,7 +251,6 @@ body, html {
 }
 
 * {
-    /* box-sizing: border-box; */
     scrollbar-color: transparent transparent; /* thumb and track color */
     scrollbar-width: 0px;
 }
@@ -276,21 +271,16 @@ body, html {
 * {
     -ms-overflow-style: none;
 }
-
-.carousel_list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
   
 .carousel {
     position: relative;
-    padding-top: 75%;
+    padding-bottom: 50%;
     width: 70%;
     top: 300px;
-    height: 20%;
     left: 50%;
+    bottom: 150px;
     transform: translate(-50%, -50%);
+    color: whitesmoke;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
 }
@@ -377,6 +367,9 @@ body, html {
 .carousel__navigation-list,
 .carousel__navigation-item {
     display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
   
 .carousel__navigation-button {
@@ -389,6 +382,10 @@ body, html {
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s;
+}
+
+.carousel__navigation-button:hover {
+    background-color: #8f6868;
 }
   
 .carousel::before,
@@ -429,6 +426,14 @@ body, html {
     line-height: 4rem;
     text-align: center;
     pointer-events: none;
+}
+
+.carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+  
+.carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
 /* For debugging the annoying horizontal scroll bar */
