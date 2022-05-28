@@ -25,35 +25,48 @@
 					<li>California native</li>
 					<li>Computer Science @ UC Berkeley, 2022</li>
 					<li>Zhongli main</li>
-					<li>Self-proclaimed weeb</li>
+					<li>weeb</li>
+					<li>psst I design vinyl stickers!! :-)</li>
+					<li>thanks for checking out my janky website</li>
 				</ul>
 			</div>
 		</div>
 
-		<div class="showcase">
-			<div class="flip-card card1">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<h1>sticker1</h1>
-				  </div>
-				  <div class="flip-card-back">
-					<h1>sticker</h1>
-					<p>coming soon</p>
-				  </div>
+		<section class="carousel" aria-label="Gallery">
+			<ol class="carousel-list carousel__viewport">
+			  <li id="carousel__slide1"
+				  tabindex="0"
+				  class="carousel-list carousel__slide">
+				<div class="carousel__snapper">
+				  <a href="#carousel__slide2"
+					 class="carousel__prev">Go to last slide</a>
+				  <a href="#carousel__slide2"
+					 class="carousel__next">Go to next slide</a>
 				</div>
-			</div>
-			<div class="flip-card card2">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<h1>sticker2</h1>
-				  </div>
-				  <div class="flip-card-back">
-					<h1>sticker</h1>
-					<p>coming soon</p>
-				  </div>
-				</div>
-			</div>
-		</div>
+			  </li>
+			  <li id="carousel__slide2"
+				  tabindex="0"
+				  class="carousel-list carousel__slide">
+				<div class="carousel__snapper"></div>
+				<a href="#carousel__slide1"
+				   class="carousel__prev">Go to previous slide</a>
+				<a href="#carousel__slide1"
+				   class="carousel__next">Go to next slide</a>
+			  </li>
+			</ol>
+			<aside class="carousel__navigation">
+			  <ol class="carousel-list carousel__navigation-list">
+				<li class="carousel-list carousel__navigation-item">
+				  <a href="#carousel__slide1"
+					 class="carousel__navigation-button">1</a>
+				</li>
+				<li class="carousel-list carousel__navigation-item">
+				  <a href="#carousel__slide2"
+					 class="carousel__navigation-button">2</a>
+				</li>
+			  </ol>
+			</aside>
+		</section>
 
 		<a href="https://www.linkedin.com/in/emily-minh-thu-nguyen-4220991a9/">
 			<img src="images/linkedin.png" class="linkedin">
