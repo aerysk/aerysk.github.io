@@ -11,8 +11,8 @@ body, html {
     position: relative;
     width: 100%;
     height: 30vh;
-    min-height: 211px;
-    min-width: 1058px;
+    max-height: 190px;
+    /* min-width: 1058px; */
     background: #664949;
 }
 
@@ -68,7 +68,8 @@ body, html {
     font-family: 'Allerta', sans-serif;
     font-size: 48px;
     color: whitesmoke;
-    margin-left: 143px;
+    margin-left: 8%;
+    /* margin-left: 143px; */
     margin-top: 100px;
     display: inline-block;
     overflow: hidden;
@@ -92,28 +93,48 @@ body, html {
 }
 
 .main {
+    position: relative;
+    width: 95%;
+    height: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+/* Specifically for sticker page */
+.main2 {
     margin: auto;
     position: relative;
     width: 95%;
     height: 600px;
 }
 
+.grid {
+    padding: 1rem;
+    height: 300px;
+}
+
+@media (min-width: 1030px) {
+    .main { grid-template-columns: repeat(2, 1fr); }
+    .bio {
+        position: absolute;
+        left: 500px;
+        top: 150px;
+    }
+  }
+
 .about-me {
     position: absolute;
     font-family: 'Allerta', sans-serif;
     font-size: 48px;
     color: #664949;
-    margin-left: 15%;
+    margin-left: 13%;
     margin-top: 80px;
-    display: inline-block;
 }
 
 .bio {
-    position: absolute;
-    width: 50%;
     height: 93px;
-    left: 500px;
-    top: 150px;
+    padding-top: 10px;
     font-family: 'Allerta', sans-serif;
     font-size: 22px;
     color: #664949;
@@ -211,6 +232,17 @@ body, html {
         box-shadow:0px 10px 8px rgba(0,0,0,.8);
     }
 }
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 
 /* CAROUSEL */
 
