@@ -41,7 +41,6 @@ body, html {
     font-family: 'Allerta', sans-serif;
     font-size: 38px;
     color: whitesmoke;
-    /* margin-right: 10px; */
     display: inline-block;
     background-color: transparent;
     border-radius: 8px;
@@ -109,7 +108,7 @@ body, html {
     margin: auto;
     position: relative;
     width: 95%;
-    height: 600px;
+    height: auto;
 }
 
 .grid {
@@ -187,6 +186,14 @@ body, html {
     height: 80px;
     background: #664949;
     text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon {
