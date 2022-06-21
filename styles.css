@@ -95,12 +95,22 @@ body, html {
 }
 
 .main {
-    position: relative;
-    width: 95%;
-    height: 80%;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
+    height: auto;
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    font-family: 'Allerta', sans-serif;
+    color: #664949;
+}
+
+.flex-item {
+    /* height: auto; */
+    margin: 20px;
 }
 
 /* Specifically for sticker page */
@@ -111,46 +121,12 @@ body, html {
     height: auto;
 }
 
-.grid {
-    padding: 1rem;
-    height: 300px;
-}
-
-@media (min-width: 1030px) {
-    .main { 
-        grid-template-columns: repeat(2, 1fr); 
-        padding-bottom: 200px;
-    }
-    .bio {
-        position: absolute;
-        left: 500px;
-        top: 150px;
-    }
-  }
-
-.about-me {
-    position: absolute;
-    font-family: 'Allerta', sans-serif;
-    font-size: 48px;
-    color: #664949;
-    margin-left: 13%;
-    margin-top: 80px;
-}
-
-.bio {
-    height: 93px;
-    padding-top: 10px;
-    font-family: 'Allerta', sans-serif;
-    font-size: 22px;
-    color: #664949;
-}
-
 .profpic {
-    position: absolute;
+    position: relative;
     width: 216px;
     height: 216px;
-    left: 223px;
-    top: 160px;
+    left: 17px;
+    top: 17px;
     object-fit: cover;
     border-radius: 9999px;
 }
@@ -161,8 +137,6 @@ body, html {
     background-color: whitesmoke;
     width: 250px;
     height: 250px;
-    left: 206px;
-    top: 143px;
     opacity: 0;
     animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
 }
@@ -368,7 +342,7 @@ a:active { text-decoration: none; }
 }
   
 .carousel__slide:before {
-    content: counter(item);
+    /* content: counter(item); */
     position: absolute;
     top: 50%;
     left: 50%;

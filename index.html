@@ -15,23 +15,25 @@
 		</div>
 
 		<div class="main">
-			<div class="circle" style="animation-delay: 0s"></div>
-			<div class="circle" style="animation-delay: 1s"></div>
-			<div class="circle" style="animation-delay: 2s"></div>
-			<div class="circle" style="animation-delay: 3s"></div>
-			<img src="resources/profpic.jpg" class="profpic">
-			<div class="grid">
-				<div class="about-me">about me</div>
-			</div>
-			<div class="grid">
-				<div class="bio">
-					<ul>
-						<li>California native</li>
-						<li>Computer Science @ UC Berkeley, 2022</li>
-						<li>psst I design vinyl stickers!! :-)</li>
-						<li>thanks for stopping by</li>
-					</ul>
+			<div class="flex-item" style="display:flex; flex-flow: column-reverse;">
+				<div class="flex-col" style="padding-top: 50px;">
+					<div class="circle" style="animation-delay: 0s"></div>
+					<div class="circle" style="animation-delay: 1s"></div>
+					<div class="circle" style="animation-delay: 2s"></div>
+					<div class="circle" style="animation-delay: 3s"></div>
+					<img src="resources/profpic.jpg" class="profpic">
 				</div>
+				<div class="flex-col">
+					<div style="font-size: 48px; position: absolute;">about me</div>
+				</div>
+			</div>
+			<div class="flex-item" style="position: relative; z-index: 5;">
+				<ul style="font-size: 22px;">
+					<li>California native</li>
+					<li>Computer Science @ UC Berkeley, 2022</li>
+					<li>psst I design vinyl stickers!! :-)</li>
+					<li>thanks for stopping by</li>
+				</ul>
 			</div>
 		</div>
 
