@@ -65,15 +65,16 @@ body, html {
     }
 }
 
+.typewriting {
+    display: inline-block;
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
 .header-text {
-    position: relative;
     font-family: 'Allerta', sans-serif;
     font-size: 48px;
     color: whitesmoke;
-    margin-left: 8%;
-    /* margin-left: 143px; */
-    margin-top: 100px;
-    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid white; /* The typwriter cursor */
@@ -85,7 +86,7 @@ body, html {
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 375px; }
+    to { width: 100%; }
 }
 
 /* The typewriter cursor effect */
@@ -117,7 +118,7 @@ body, html {
 .main2 {
     margin: auto;
     position: relative;
-    width: 95%;
+    text-align: center;
     height: auto;
 }
 
@@ -183,6 +184,7 @@ video {
     position: relative;
     padding-top: 40px;
     margin: 20px auto 0px;
+    width: 300px;
     animation: 3s infinite alternate floating;
 }
 
@@ -334,6 +336,7 @@ a:active { text-decoration: none; }
     flex: 0 0 100%;
     width: 100%;
     background-color: #f99;
+    background-size: cover;
     counter-increment: item;
 }
   
